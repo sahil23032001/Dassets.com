@@ -1,0 +1,31 @@
+package com.example.dassets
+
+data class Data(
+    val change: Double,
+    val chart30dPath: String,
+    val chart365dPath: String,
+    val chartTodayPath: String,
+    val date30dAgo: String,
+    val date365dAgo: String,
+    val dayHigh: Double,
+    val dayLow: Double,
+    val ffmc: Double,
+    val identifier: String,
+    val lastPrice: Double,
+    val lastUpdateTime: String,
+    val meta: Meta,
+    val nearWKH: Double,
+    val nearWKL: Double,
+    val `open`: Double,
+    val pChange: Double,
+    val perChange30d: Double,
+    val perChange365d: Double,
+    val previousClose: Double,
+    val priority: Int,
+    val series: String,
+    val symbol: String,
+    val totalTradedValue: Double,
+    val totalTradedVolume: Int,
+    val yearHigh: Double,
+    val yearLow: Double
+)

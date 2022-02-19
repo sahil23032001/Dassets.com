@@ -1,0 +1,17 @@
+import requests
+
+url = "https://yfapi.net/v6/finance/quote?region=IN&lang=en"
+
+querystring = {"symbols":"TCS.NS,CDSL.NS,TTML.NS,TECHM.NS,PNB.NS"}
+
+headers = {
+    'x-api-key': "yiMPxoDFSw4FPAq4F9uZ57zjeFoAkDQNCRFU1Ni8"
+    }
+
+response = requests.request("GET", url, headers=headers, params=querystring)
+print(response.request.url)
+print(response.request.headers)
+print(response.request.querystring)
+
+
+print(response.text)
